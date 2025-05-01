@@ -2,19 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>PlayerJS Video</title>
-  <!-- Подключение скрипта плеера -->
-  <script src="https://cdn.jsdelivr.net/gh/playerjs/playerjs@latest/playerjs.js"></script>
+  <title>Видео с PixelDrain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #playerjs {
+      width: 90%;
+      max-width: 800px;
+      height: 480px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
 <body>
-  <!-- Контейнер для плеера -->
-  <div id="player"></div>
+  <div id="playerjs"></div>
 
-  <!-- Инициализация плеера -->
+  <script src="https://cdn.jsdelivr.net/npm/playerjs@latest/player.js"></script>
   <script>
     var player = new Playerjs({
-      id: "player",
-      file: "https://pixeldrain.com/api/file/oweXa4SG"
+      id: "playerjs",
+      file: "https://pixeldrain.com/api/file/ErdUUSQd?download"
     });
   </script>
 </body>
